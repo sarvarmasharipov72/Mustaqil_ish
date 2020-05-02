@@ -24,6 +24,7 @@
       margin-top: 6%;
   }
   h1{
+    font-family: 'Anton', sans-serif;
       text-align: center;
   }
   .card:hover{
@@ -82,4 +83,20 @@
   }
   p{
     font-family: 'Questrial', sans-serif; 
+  }
+  .air{
+      padding: 5%;
+  }
+  .air-child{
+      margin-left: 7%;
+      margin-right: 7%;
+      margin-top: 3%;
+      padding: 2% 4% 4% 4%;
+      border: 0.3px solid rgb(200, 200, 201);
+  }
+  .row{
+      padding-top: 0%;
+  }
+  .input{
+      background-color: rgb(243, 241, 241);
   }

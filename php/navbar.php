@@ -8,7 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="banner">
         <!--navbar-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand"><img src="img/main_icon.svg" alt=""> Travel</a>

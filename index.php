@@ -95,7 +95,7 @@
                     <div>
                         <h4>Air Tickets</h4>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia! <br>
-                        <a href="#">Read More</a>
+                        <a href="php/air.php">Read More</a>
                     </div>
                 </div>
                 <div class="col">

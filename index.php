@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -126,7 +127,7 @@
         <div class="popular-fluid">
             <h1>Popular Destination</h1>
             <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sint delectus reiciendis molestiae nisi maiores fuga vero alias nihil omnis!</p>
+                <p class="past">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem sint delectus reiciendis molestiae nisi maiores fuga vero alias nihil omnis!</p>
             </div>
             <div>
                 <div class="row">
@@ -176,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row row1">
                     <div class="col">
                         <div class="card">
                             <img class="img" src="img/rim.jpg" alt="">

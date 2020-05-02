@@ -63,6 +63,7 @@
       padding-right: 10%;
   }
   .footer{
+      margin-top: 5%;
       height: 70px;
       background-color: #343a40;
   }
@@ -72,4 +73,13 @@
   }
   .footer-fluid a{
       text-decoration: none;
+  }
+  .past{
+      width: 70%;
+      margin: auto;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+  }
+  p{
+    font-family: 'Questrial', sans-serif; 
   }

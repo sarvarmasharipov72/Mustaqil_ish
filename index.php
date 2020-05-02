@@ -212,7 +212,7 @@
                                 <h5 class="card-title">Brasilia</h5>
                                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, est beatae?</p>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                     <div class="col">
                         <div class="card">

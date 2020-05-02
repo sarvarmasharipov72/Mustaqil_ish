@@ -15,7 +15,7 @@
         ?>
     </div>
     <div>
-        <img src="../img/title.png" alt="" width="100%" height="300px">
+        <img src="../img/title.jpg" alt="" width="100%" height="300px">
     </div>
     <div class="air">
         <div class="air-fluid">
@@ -102,7 +102,7 @@
                     </div>
                 </div><br>
                 <div>
-                    <h6>Travel Class</h6>
+                    <h6>Journey type</h6>
                     <select class="form-control input">
                         <option value="category1">One Way</option>
                         <option value="category2">Round trip</option>

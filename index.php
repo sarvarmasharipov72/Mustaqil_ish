@@ -15,6 +15,7 @@
         include("php/db.php");
         include("php/navbar.php");
         $hotels = $connect->query('SELECT * FROM `hotels` LIMIT 4')->fetchAll();
+        $cities=$connect->query('SELECT * FROM `cities` LIMIT 8')->fetchAll();
        ?>
         <!--/navbar-->
         <!--main-->
@@ -30,10 +31,13 @@
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $item['title']; ?></h5>
                                 <p class="card-text"><?php echo $item['text']; ?></p>
+                                <a href="#">Read more</a>
                             </div>
                         </div>
                     </div>
                     <?php endforeach; ?>
+                </div>
+                
         <!--/main-->
     </div>
     <!--Help-->
@@ -88,15 +92,19 @@
             </div>
             <div>
                 <div class="row">
+                <?php foreach($cities AS $index => $item): ?>
                     <div class="col">
-                        <div class="card">
-                            <img class="img" src="img/london.jpg" alt="">
+                        <div class="card" style="width: 18rem;">
+                            <img class="img" src="<?php echo $item['img']; ?>" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">London</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, autem?</p>
+                                <h5 class="card-title"><?php echo $item['name']; ?></h5>
+                                <p class="card-text"><?php echo $item['text']; ?></p>
+                                <a href="#">Read more</a>
                             </div>
                         </div>
                     </div>
+                    <?php endforeach; ?>
+                    <!--
                     <div class="col">
                         <div class="card">
                             <img class="img" src="img/barselona.jpg" alt="">
@@ -179,7 +187,7 @@
                                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam perferendis pariatur autem! Temporibus?</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

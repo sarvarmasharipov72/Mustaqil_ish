@@ -14,8 +14,7 @@
         include("navbar.php")
         ?>
     </div>
-    <div>
-        <img src="../img/title.jpg" alt="" width="100%" height="300px">
+    <div class="title">
     </div>
     <div class="air">
         <div class="air-fluid">

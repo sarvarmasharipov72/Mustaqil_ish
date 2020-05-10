@@ -12,7 +12,9 @@
     <div class="banner">
         <!--navbar-->
         <?php
+        include("php/db.php");
         include("php/navbar.php");
+        $hotels = $connect->query('SELECT * FROM `hotels` LIMIT 4')->fetchAll();
        ?>
         <!--/navbar-->
         <!--main-->
@@ -21,62 +23,17 @@
                     The Best Hotels
                 </h1>
                 <div class="row">
+                    <?php foreach($hotels AS $index => $item): ?>
                     <div class="col">
-                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                            <img class="img" src="img/best1.jpg" alt="">
+                        <div class="card" style="width: 18rem;">
+                            <img class="img" src="<?php echo $item['img']; ?>" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Las Vegas</h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit explicabo corporis mollitia autem nam.</p>
+                                <h5 class="card-title"><?php echo $item['title']; ?></h5>
+                                <p class="card-text"><?php echo $item['text']; ?></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                            <img class="img" src="img/best2.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Las Vegas</h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit explicabo corporis mollitia autem nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                            <img class="img" src="img/best3.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Las Vegas</h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit explicabo corporis mollitia autem nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                            <img class="img" src="img/best4.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Las Vegas</h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit explicabo corporis mollitia autem nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                            <img class="img" src="img/best5.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Las Vegas</h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit explicabo corporis mollitia autem nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-                            <img class="img" src="img/best6.jpg" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Las Vegas</h5>
-                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fugit explicabo corporis mollitia autem nam.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <?php endforeach; ?>
         <!--/main-->
     </div>
     <!--Help-->
